@@ -1,0 +1,21 @@
+<html>
+    <head>
+<script>
+    function validate(){
+        var username=document.myform.username.value;
+        var password=document.myform.password.value;
+        if(username=="scient"&& password=="scient"){
+            document.write("login is success")
+        }
+        else{
+            document.write("login is failed")
+        }
+    }
+</script>
+    </head>
+    <body>
+<form name="myform" method="post" onsubmit="validate()">
+UserName: <input type="text" name="username"/><br/>
+Password: <input type="password" name="password"/><br/>
+<input type="submit" value="submit"/>
+        </form>   </body></html>
